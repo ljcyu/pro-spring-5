@@ -1,6 +1,8 @@
 subprojects {
 	group 'com.apress.prospring5.ch07'
 	apply plugin: 'java'
+	apply plugin: 'application'
+
 
 	/*Task that copies all the dependencies under build/libs */
 	task copyDependencies(type: Copy) {
