@@ -3,6 +3,7 @@ package com.apress.prospring5.ch8;
 import java.util.List;
 
 import com.apress.prospring5.ch8.entities.Singer;
+import com.apress.prospring5.ch8.service.SingerService;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class SpringJPADemo {

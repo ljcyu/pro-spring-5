@@ -1,4 +1,4 @@
-package com.apress.prospring5.ch8;
+package com.apress.prospring5.ch8.repository;
 
 import java.util.List;
 

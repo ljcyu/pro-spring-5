@@ -1,5 +1,6 @@
-package com.apress.prospring5.ch8;
+package com.apress.prospring5.ch8.service;
 
+import com.apress.prospring5.ch8.repository.SingerRepository;
 import com.apress.prospring5.ch8.entities.Singer;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

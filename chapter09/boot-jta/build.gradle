@@ -1,7 +1,7 @@
 buildscript {
 	repositories {
-		mavenLocal()
-		mavenCentral()
+		jcenter()
+		mavenLocal()		
 		maven { url "http://repo.spring.io/release" }
 		maven { url "http://repo.spring.io/snapshot" }
 		maven { url "https://repo.spring.io/libs-snapshot" }
@@ -15,12 +15,19 @@ buildscript {
 }
 
 apply plugin: 'org.springframework.boot'
-
-dependencies {
-	compile boot.starterJpa, boot.starterJta, boot.starterJms, db.h2
-	compile(misc.artemis) {
-		exclude group: 'org.apache.geronimo.specs', module: 'geronimo-jms_2.0_spec'
+/*configurations.all{
+	resolutionStrategy{
+		force 'org.apache.activemq:artemis-commons:2.1.0'
 	}
+}*/
+dependencies {
+	compile boot.starterJpa, boot.starterJta,/* boot.starterJms,*/ db.h2
+	/*compile(misc.artemis) {
+		exclude group: 'org.apache.geronimo.specs', module: 'geronimo-jms_2.0_spec'
+	}*/
+	compile('org.springframework.boot:spring-boot-starter-artemis:2.0.6.RELEASE')
+	compile( "org.apache.activemq:artemis-jms-client:2.6.3")
+	compile( "org.apache.activemq:artemis-jms-server:2.6.3")
 }
 
 jar {

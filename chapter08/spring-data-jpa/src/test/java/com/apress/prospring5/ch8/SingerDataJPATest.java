@@ -2,6 +2,7 @@ package com.apress.prospring5.ch8;
 
 import com.apress.prospring5.ch8.config.DataJpaConfig;
 import com.apress.prospring5.ch8.entities.Singer;
+import com.apress.prospring5.ch8.service.SingerService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
