@@ -14,7 +14,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 @Configuration
 @Import({DataServiceConfig.class})
 @EnableScheduling
-public class AppConfig {
+public class ScheduleAnnoConfig {
 
 	// decomment this to use the TaskScheduler explicitly declared bean
 	/*

@@ -13,5 +13,5 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 @Configuration
 @Import({DataServiceConfig.class})
 @ImportResource("classpath:spring/task-namespace-app-context.xml")
-public class AppConfig {
+public class ScheduleXmlConfig {
 }
