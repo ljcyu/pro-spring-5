@@ -10,6 +10,7 @@ public class ScheduleTaskDemo {
 		GenericApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 
 		System.in.read();
-		ctx.close();
+		System.out.println("will close ScheduleTaskDemo");
+		ctx.registerShutdownHook();
 	}
 }
