@@ -2,7 +2,7 @@ package com.apress.prospring5.ch11;
 
 import java.util.concurrent.Future;
 
-import com.apress.prospring5.ch11.config.AppConfig;
+import com.apress.prospring5.ch11.config.ScheduleAsyncConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -12,7 +12,7 @@ public class AsyncTaskDemo {
     private static Logger logger = LoggerFactory.getLogger(AsyncTaskDemo.class);
 
     public static void main(String... args) throws Exception{
-        GenericApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
+        GenericApplicationContext ctx = new AnnotationConfigApplicationContext(ScheduleAsyncConfig.class);
 
         AsyncService asyncService = ctx.getBean("asyncService", AsyncService.class);
 

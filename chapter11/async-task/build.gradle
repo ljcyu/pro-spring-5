@@ -1,3 +1,4 @@
+apply plugin:'application'
 dependencies {
 	compile spring.context
 }
@@ -10,3 +11,4 @@ jar {
 				"Class-Path"         : configurations.compile.collect { it.getName() }.join(' '))
 	}
 }
+mainClassName="com.apress.prospring5.ch11.AsyncTaskDemo"

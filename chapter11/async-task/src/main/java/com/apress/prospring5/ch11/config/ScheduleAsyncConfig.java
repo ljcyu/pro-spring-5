@@ -13,5 +13,5 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @Configuration
 @EnableAsync
 @ComponentScan(basePackages  = {"com.apress.prospring5.ch11"} )
-public class AppConfig {
+public class ScheduleAsyncConfig {
 }
